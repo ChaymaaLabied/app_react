@@ -1,0 +1,1 @@
+// const Card = ({ card, isFlipped, isMatched, handleChoice }) => { ...} // j'en aurai besoin 
