@@ -1,38 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c08081;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .App {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  justify-items: center;
+}
+
+/* Chaque carte */
+.card {
+  position: relative;
+  width: 130px;
+  height: 160px;
+  cursor: pointer;
+  perspective: 1000px;
+  border: none;
+  background: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card .frontSide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.card .backSide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f8b6d2; /* vieux rose */
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease;
+}
+
+/* Effet de flip */
+.card.flipped .frontSide {
+  transform: rotateY(0deg);
+}
+.card.flipped .backSide {
+  transform: rotateY(180deg);
+}
+
+.victory {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 60px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.victory h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.victory button {
+  background-color: #e76494;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.victory button:hover {
+  background-color: #da4c9d;
+  transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: scale(0.9);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(1);
   }
 }
