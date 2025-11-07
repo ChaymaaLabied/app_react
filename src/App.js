@@ -21,7 +21,7 @@ function App() {
   const [victory, setVictory] = useState(false);
 
   //Tous les useEffects
-  // Comparer les cartes sélectionnées ok
+  // Comparer les cartes sélectionnées
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       setIsDisabled(true);
@@ -58,7 +58,7 @@ function App() {
     setIsDisabled(false);
   };
 
-  // Vérifier la victoire ok
+  // Vérifier la victoire
   useEffect(() => {
     if (cards.every((card) => card.isMatched)) {
       setVictory(true);
@@ -110,5 +110,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
