@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/app_react/static/css/main.c0ff674e.css",
+    "main.js": "/app_react/static/js/main.911b7325.js",
+    "static/media/image_3 - Copie.jpg": "/app_react/static/media/image_3 - Copie.4e33ef392a6347fa7af3.jpg",
+    "static/media/image_3.jpg": "/app_react/static/media/image_3.4e33ef392a6347fa7af3.jpg",
+    "static/media/image_2 - Copie.jpg": "/app_react/static/media/image_2 - Copie.8cd61047c294246454d5.jpg",
+    "static/media/image_2.jpg": "/app_react/static/media/image_2.8cd61047c294246454d5.jpg",
+    "static/media/image_1 - Copie.jpg": "/app_react/static/media/image_1 - Copie.f20663be8d703f2b444b.jpg",
+    "static/media/image_1.jpg": "/app_react/static/media/image_1.f20663be8d703f2b444b.jpg",
+    "static/media/backpic.jpg": "/app_react/static/media/backpic.b6af9bc3ae43a65b6d0a.jpg",
+    "static/media/image_5 - Copie.jpg": "/app_react/static/media/image_5 - Copie.21f575bc869e061db2d7.jpg",
+    "static/media/image_5.jpg": "/app_react/static/media/image_5.21f575bc869e061db2d7.jpg",
+    "static/media/image_4 - Copie.jpg": "/app_react/static/media/image_4 - Copie.2e9b1ff582728148b4a7.jpg",
+    "static/media/image_4.jpg": "/app_react/static/media/image_4.2e9b1ff582728148b4a7.jpg",
+    "index.html": "/app_react/index.html",
+    "main.c0ff674e.css.map": "/app_react/static/css/main.c0ff674e.css.map",
+    "main.911b7325.js.map": "/app_react/static/js/main.911b7325.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0ff674e.css",
+    "static/js/main.911b7325.js"
+  ]
+}
